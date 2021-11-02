@@ -1,0 +1,117 @@
+$Color:#fc0;
+
+
+.Information{
+  overflow: hidden;
+  margin: 60px 0 0 0;
+  position: relative;
+
+  .container{
+
+    .row{
+      .col-md-6{
+        .card{
+          background-color: transparent!important;
+          border-color:transparent;
+
+          .card-body{
+            img{
+              width: 100%;
+              height: 100%;
+            }
+            .wordCarousel {
+              font-size: 36px;
+              font-weight: 100;
+              color: $Color;
+              display: flex;
+              justify-content: center;
+            }
+
+            .text{
+              font-size: 25px;
+              line-height:40px;
+            }
+            .btn2{
+              display: flex;
+              justify-content: center;
+            .btn{
+              width: 180px;
+              height: 50px;
+              font-weight: 500;
+              font-size: 18px;
+              transition: 0.3s linear;
+              background-color: $Color;
+              margin-top: 10px ;
+              i{
+                transform: rotate(90deg);
+                opacity: 0;
+              }
+              &:focus{
+                box-shadow: none;
+              }
+              &:hover{
+                color: #ffffff;
+                i{
+                  opacity: 1;
+                }
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bg-right{
+    position: absolute;
+    right: -50px;
+    width: 300px;
+    top: 0;
+    z-index: -3!important;
+  }
+}
+@media (max-width: 768px) {
+  .Information{
+    .bg-right{
+      display: none;
+    }
+  }
+
+}
+@media (max-width: 480px) {
+  .Information{
+    .container{
+
+      .row{
+        .col-md-6{
+          .card{
+            background-color: transparent!important;
+            border-color:transparent;
+
+            .card-body{
+              max-height: 420px;
+              .wordCarousel {
+                font-size: 25px;
+                font-weight: 100;
+                color: $Color;
+                display: flex;
+                justify-content: center;
+              }
+              img{
+                width: 100%;
+              }
+              .text{
+                font-size: 18px;
+                line-height:25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bg-right{
+    display: none;
+    }
+  }
+
+}

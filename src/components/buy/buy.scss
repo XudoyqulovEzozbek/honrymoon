@@ -1,0 +1,246 @@
+$Color: #fc0;
+
+
+.wrapper {
+  overflow-x: hidden;
+  padding: 100px 0 0 0;
+  position: relative;
+  .bg-left {
+    position: absolute;
+    top: 50px;
+    left: -30px;
+  }
+  .container {
+
+
+    .row {
+      overflow: hidden;
+
+      .col-md-6 {
+
+        .card {
+          background-color: transparent !important;
+          border-color: transparent;
+
+          .card-body {
+            max-height: 420px;
+
+            .wordCarousel {
+              font-size: 36px;
+              font-weight: 100;
+              color: $Color;
+              display: flex;
+              justify-content: center;
+
+              span {
+                margin: 0;
+                font-weight: 700;
+              }
+
+              div {
+                overflow: hidden;
+                height: 65px;
+                margin: 0;
+
+                li {
+                  color: $Color;
+                  font-weight: 700;
+                  padding: 0;
+                  height: 45px;
+                  margin-bottom: 45px;
+                  display: block;
+                }
+              }
+            }
+
+            .flip4 {
+              padding-left: 7px;
+              animation: flip4 6s infinite;
+            }
+
+            @keyframes flip4 {
+              0% {
+                margin-top: -270px;
+              }
+              10% {
+                margin-top: -180px;
+              }
+              30% {
+                margin-top: -180px;
+              }
+              40% {
+                margin-top: -90px;
+              }
+              60% {
+                margin-top: -90px;
+              }
+              70% {
+                margin-top: 0;
+              }
+              95% {
+                margin-top: 0;
+              }
+              99.9% {
+                margin-top: 60px;
+              }
+              100% {
+                margin-top: 60px;
+              }
+            }
+
+            img {
+              width: 100%;
+            }
+
+            .text {
+              font-size: 25px;
+              color: #000000;
+              line-height: 40px;
+
+              p {
+                font-size: 25px;
+                font-weight: 500;
+                color: $Color;
+                display: inline;
+              }
+            }
+
+            a {
+              text-decoration: none;
+            }
+
+            .btn1 {
+              display: flex;
+              justify-content: center;
+
+              .btn {
+                width: 180px;
+                height: 50px;
+                font-weight: 500;
+                font-size: 18px;
+                transition: 0.3s linear;
+                background-color: $Color;
+                margin-top: 10px;
+
+
+                i {
+                  transform: rotate(90deg);
+                  opacity: 0;
+                }
+
+                &:focus {
+                  box-shadow: none;
+                }
+
+                &:hover {
+                  color: #ffffff;
+
+                  i {
+                    opacity: 1;
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .gif {
+        .card {
+          //background: url("../../money.gif") no-repeat;
+          //background-size: cover;
+          border-radius: 20px;
+          height: 422px;
+          //width: 100px;
+          iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    .bg-left {
+      position: absolute;
+      top: 50px;
+      left: -30px;
+      width: 100px;
+      display: none;
+    }
+    .container {
+      .row {
+
+        .gif {
+          margin-top: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 20px 0 0 0;
+    padding: 0;
+    .container {
+      .row {
+        .col-md-6 {
+
+          .card {
+            .card-body {
+              .wordCarousel {
+                font-size: 25px;
+                font-weight: 100;
+
+                span {
+                  margin: 0;
+                  font-weight: 700;
+                }
+
+                div {
+                  overflow: hidden;
+                  height: 40px;
+                  margin: 0;
+
+                  li {
+                    color: $Color;
+                    font-weight: 700;
+                    padding: 0;
+                    height: 45px;
+                    margin-bottom: 45px;
+                    display: block;
+                  }
+                }
+              }
+
+              .text {
+                font-size: 18px;
+                line-height: 25px;
+
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .wrapper {
+    .container {
+      .gif {
+        margin-top: 70px !important;
+
+      }
+    }
+  }
+}

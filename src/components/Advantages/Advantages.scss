@@ -1,0 +1,48 @@
+$Color: #fc0;
+.Advantages{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 100px 0;
+  position: relative;
+
+  .container{
+    .row{
+      .col-md-12{
+        .title{
+          text-align: left;
+          color: $Color;
+        }
+        .text{
+          font-size: 20px;
+          letter-spacing: 1px;
+          line-height: 50px;
+        }
+        video{
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+
+  .Advantages{
+    margin: 50px 0 0 0;
+    .container{
+      .row{
+        .col-md-12{
+          .title{
+
+          }
+          .text{
+            font-size: 18px;
+            line-height: 30px;
+          }
+
+        }
+      }
+    }
+  }
+}
